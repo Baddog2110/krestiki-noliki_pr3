@@ -4,6 +4,7 @@ def main(board):
     obj = base(board)
     counter = 0
     win = False
+    print("Чтобы завершить работу программы введите '111'")
     while not win:
         obj.draw_board()
         if counter % 2 == 0:

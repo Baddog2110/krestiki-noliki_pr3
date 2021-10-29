@@ -16,6 +16,8 @@ class base:
             except:
                 print ("Некорректный ввод. Вы уверены, что ввели число?")
                 continue
+            if player_answer == 111:
+                raise SystemExit(1)
             if player_answer >= 1 and player_answer <= 9:
                 if (str(self.board[player_answer-1]) not in "XO"):
                     self.board[player_answer-1] = player_token
